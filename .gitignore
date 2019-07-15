@@ -1,4 +1,8 @@
 .ipynb_checkpoints/
+data/
+
 *.pyc
 *.prototxt
 *.caffemodel
+*.zip
+*.jpg
