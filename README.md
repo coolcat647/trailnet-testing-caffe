@@ -29,3 +29,6 @@ This notebook will
 1. Download the pre-trained model and caffe prototxt file for the **TrailNet**
 2. Download the testing dataset to **data/ folder**
 3. Conduct prediction and calculate the accurcy
+
+## 3. Open another docker terminal
+$ docker exec -it trailnet-test bash
