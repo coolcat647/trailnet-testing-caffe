@@ -6,4 +6,4 @@ data/
 *.prototxt
 *.caffemodel
 *.zip
-*.jpg
+./*.jpg

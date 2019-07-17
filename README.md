@@ -31,4 +31,4 @@ This notebook will
 3. Conduct prediction and calculate the accurcy
 
 ## 3. Open another docker terminal
-$ docker exec -it trailnet-test bash
+$ docker exec -it trailnet-caffe-test bash

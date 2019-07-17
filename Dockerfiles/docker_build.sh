@@ -1,3 +1,3 @@
 #!/usr/bin/env sh
 
-docker build -t pytorch-jupyter -f Dockerfile .
+docker build -t argnctu/ros-caffe -f Dockerfile .
