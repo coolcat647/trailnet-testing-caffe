@@ -2,7 +2,7 @@
 This repository is a demostration for the 3-classes deep trial-following model from [Deep Trail-Following Robotic Guide Dog in Pedestrian Environments for People who are Blind and Visually Impaired](https://arg-nctu.github.io/publications/ICRA18_0060_FI.pdf). 
 
 ## Docker image preparation
-If your GPU is belong to NVIDIA 20XX series, please specify docker image tag with **cuda10**, otherwise **cuda8**.
+If your GPU is belong to NVIDIA 20XX series, please specify docker image tag with **cuda10.0**, otherwise **cuda8.0**.
 
  - docker build    
 ```
@@ -12,7 +12,7 @@ pc$ source docker_build.sh [cuda8.0 | cuda10.0]
 
  - docker pull
 ```
-pc$ docker pull coolcat647/ros-caffe:[cuda8 |cuda10]
+pc$ docker pull coolcat647/ros-caffe:[cuda8.0 |cuda10.0]
 ```
 
 ## 1. Launch docker container
