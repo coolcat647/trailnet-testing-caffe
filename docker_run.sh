@@ -24,7 +24,7 @@ then
                         -p "${jupyter_port}":"${jupyter_port}" \
                         -w "${goal_dir}" \
                         -e JUPYTER_PORT="${jupyter_port}" \
-                        --name trailnet-test \
+                        --name trailnet-caffe-test \
                         argnctu/ros-caffe
 else
     printf "Run \"nvidia-docker\"\n"
@@ -32,6 +32,6 @@ else
                                -p "${jupyter_port}":"${jupyter_port}" \
                                -w ${goal_dir} \
                                -e JUPYTER_PORT="${jupyter_port}" \
-                               --name trailnet-test \
+                               --name trailnet-caffe-test \
                                argnctu/ros-caffe 
 fi
