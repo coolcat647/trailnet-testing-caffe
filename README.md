@@ -1,4 +1,5 @@
-# trailnet-testing-caffe
+# TrailNet-testing-caffe
+This repository is a demostration for the 3-classes deep trial-following model from [Deep Trail-Following Robotic Guide Dog in Pedestrian Environments for People who are Blind and Visually Impaired](https://arg-nctu.github.io/publications/ICRA18_0060_FI.pdf). 
 
 ## Docker build
     
@@ -26,9 +27,19 @@ Open the browser, type your GPU machine's IP and paste the token info. the sampl
 
 Launch **trailnet_evaluation.ipynb** and execute it step by step with **Shift + Enter**
 This notebook will 
-1. Download the pre-trained model and caffe prototxt file for the **TrailNet**
-2. Download the testing dataset to **data/ folder**
-3. Conduct prediction and calculate the accurcy
+- Download the pre-trained model and caffe prototxt file for the **TrailNet**
+- Download the testing dataset to **data/ folder**
+- Conduct prediction and calculate the accurcy
 
 ## 3. Open another docker terminal
-$ docker exec -it trailnet-caffe-test bash
+```
+pc$ docker exec -it trailnet-caffe-test bash
+```
+
+## Model description
+TrialNet is a deep CNN model maps the input image into three output classes as motion primitives: “Turn Left”, “Go Straight”, and “Turn Right”. To keep the robotic guide dog following the trail. 
+
+## Dataset description
+The dataset includes 6 folders which are classified wtih the background texture and environment. The YB-B1 folder is composed with the images which have damaged Yellow-Blue line which is shown below. 
+
+![dataset_info](figures/dataset_info.png)
