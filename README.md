@@ -1,11 +1,18 @@
 # TrailNet-testing-caffe
 This repository is a demostration for the 3-classes deep trial-following model from [Deep Trail-Following Robotic Guide Dog in Pedestrian Environments for People who are Blind and Visually Impaired](https://arg-nctu.github.io/publications/ICRA18_0060_FI.pdf). 
 
-## Docker build
-    
+## Docker image preparation
+If your GPU is belong to NVIDIA 20XX series, please specify docker image tag with **cuda10**, otherwise **cuda8**.
+
+ - docker build    
 ```
 pc$ cd trailnet-testing-caffe/Dockerfiles
-pc$ source docker_build.sh
+pc$ source docker_build.sh [cuda8.0 | cuda10.0]
+```
+
+ - docker pull
+```
+pc$ docker pull coolcat647/ros-caffe:[cuda8 |cuda10]
 ```
 
 ## 1. Launch docker container
@@ -31,7 +38,7 @@ This notebook will
 - Download the testing dataset to **data/ folder**
 - Conduct prediction and calculate the accurcy
 
-## 3. Open another docker terminal
+## 3.(If need be) Open another docker terminal
 ```
 pc$ docker exec -it trailnet-caffe-test bash
 ```
