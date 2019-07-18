@@ -7,3 +7,5 @@ data/
 *.caffemodel
 *.zip
 *.jpg
+
+!data/path.txt
